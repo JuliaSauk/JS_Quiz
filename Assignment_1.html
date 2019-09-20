@@ -9,111 +9,116 @@
     <title>Test yourself</title>
 </head>
 <body>
-    <h1>Test yourself to make sure you are the best!</h1>
-    <div class="buttons"> 
+<h1>Test yourself to make sure you are the best!</h1>
+<div class="buttons-block">
+    <div class="button-block">
         <button id="btn1" class="btn" onclick="Question_1()">Question_1</button>
+        <span id="status1"></span>
+    </div>
+    <div class="button-block">
         <button id="btn2" class="btn" onclick="Question_2()">Question_2</button>
+        <span id="status2"></span>
+    </div>
+    <div class="button-block">
         <button id="btn3" class="btn" onclick="Question_3()">Question_3</button>
+        <span id="status3"></span>
+    </div>
+    <div class="button-block">
         <button id="btn4" class="btn" onclick="Question_4()">Question_4</button>
+        <span id="status4"></span>
+    </div>
+    <div class="button-block">
         <button id="btn5" class="btn" onclick="Question_5()">Question_5</button>
-        
-        <table>
-                <tr>
-                  <th id="status1"></th>
-                  <th id="status2"></th> 
-                  <th id="status3"></th>
-                  <th id="status4"></th>
-                  <th id="status5"></th>
-                </tr>
-        </table>
+        <span id="status5"></span>
     </div>
+</div>
 
-    <div id="modal1" class="modal">
-            <div class="modal-content">            
-                <span class="close1">&times;</span>
-                <div class="modal-body">
-                    <p>Is it true that octopuses have three hearts?</p>
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-buttons">
-                        <button id="true1" class="btn">True</button>
-                        <button id="false1" class="btn">False</button>
-                        <button id="cancel1" class="btn">Cancel</button>
-                    </div>
-                </div>
-            </div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close1">&times;</span>
+        <div class="modal-body">
+            <p>Is it true that octopuses have three hearts?</p>
         </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close2">&times;</span>
-            <div class="modal-body">
-                <p>How old is the world's oldest piece of chewing gum? (in years)</p>
-                <p id="errors2" class="errors" ></p>
-                <input class="input2" type="text" id="answer2" name="answer2">
-            </div>
-            <div class="modal-footer">
-                <div class="modal-buttons">
-                    <button id="ok2" class="btn">Ok</button>
-                    <button id="cancel2" class="btn">Cancel</button>
-                </div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <button id="true1" class="btn">True</button>
+                <button id="false1" class="btn">False</button>
+                <button id="cancel1" class="btn">Cancel</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="modal3" class="modal">
-            <div class="modal-content">
-                <span class="close3">&times;</span>
-                <div class="modal-body">
-                    <p>Where are you from?</p>
-                    <p id="errors3" class="errors" ></p>
-                    <input class="input3" type="text" id="answer3" name="answer3">
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-buttons">
-                        <button id="ok3" class="btn">Ok</button>
-                        <button id="cancel3" class="btn">Cancel</button>
-                    </div>
-                </div>
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close2">&times;</span>
+        <div class="modal-body">
+            <p>How old is the world's oldest piece of chewing gum? (in years)</p>
+            <p id="errors2" class="errors"></p>
+            <input class="input2" type="text" id="answer2" name="answer2">
+        </div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <button id="ok2" class="btn">Ok</button>
+                <button id="cancel2" class="btn">Cancel</button>
             </div>
         </div>
+    </div>
+</div>
 
-        <div id="modal4" class="modal">
-            <div class="modal-content">            
-                <span class="close4">&times;</span>
-                <div class="modal-body">
-                    <p>Blah blah blah?</p>
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-buttons">
-                        <button id="true4" class="btn">True</button>
-                        <button id="false4" class="btn">False</button>
-                        <button id="cancel4" class="btn">Cancel</button>
-                    </div>
-                </div>
-            </div>
-        </div>  
-
-        <div id="modal5" class="modal">
-            <div class="modal-content">
-                <span class="close5">&times;</span>
-                <div class="modal-body">
-                    <p>How many bones does a new born baby have?</p>
-                    <p id="errors5" class="errors" ></p>
-                    <input class="input5" type="text" id="answer5" name="answer5">
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-buttons">
-                        <button id="ok5" class="btn">Ok</button>
-                        <button id="cancel5" class="btn">Cancel</button>
-                    </div>
-                </div>
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close3">&times;</span>
+        <div class="modal-body">
+            <p>Where are you from?</p>
+            <p id="errors3" class="errors"></p>
+            <input class="input3" type="text" id="answer3" name="answer3">
+        </div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <button id="ok3" class="btn">Ok</button>
+                <button id="cancel3" class="btn">Cancel</button>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="counter">
-            <p id="counter">Your score: </p>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close4">&times;</span>
+        <div class="modal-body">
+            <p>Blah blah blah?</p>
         </div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <button id="true4" class="btn">True</button>
+                <button id="false4" class="btn">False</button>
+                <button id="cancel4" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close5">&times;</span>
+        <div class="modal-body">
+            <p>How many bones does a new born baby have?</p>
+            <p id="errors5" class="errors"></p>
+            <input class="input5" type="text" id="answer5" name="answer5">
+        </div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <button id="ok5" class="btn">Ok</button>
+                <button id="cancel5" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="counter">
+    <p>Your score: <span id="counter"></span></p>
+</div>
 
 </body>
 </html>
