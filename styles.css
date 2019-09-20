@@ -1,0 +1,150 @@
+/* Image background*/
+body {
+    background-image: url("1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+/*Test yourself to make sure you are the best!*/
+h1{ 
+    text-align: center;
+    color: #f2f2f2;
+    background: rgb(194,52,64); 
+    font-size: 65px; 
+    margin: 20px;
+    padding: 5px;
+    font-family: 'Libre Baskerville', serif; 
+}  
+
+/* Questions buttons block*/
+.buttons {
+    margin: 0 auto;
+    width: 1225px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 20%;
+    font-size: 25px; 
+}
+
+/* Questions buttons and nested */
+.btn {
+	background-color: rgb(242, 96, 92);
+	border-color: rgba(110, 2, 38, 0.3);
+    color: white;
+    /*position: relative; /*- ? */
+	padding: 10px 40px;
+    margin: 10px 10px 10px 10px; /* TBC */
+	border-radius: 15px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	/*text-decoration: none; - ? */
+}
+
+.btn:hover {
+		background-color: rgb(254, 159, 163);
+		border-color: rgba(110, 2, 38, 0.3);
+	}
+	
+.btn:active {
+		background-color: rgba(249, 112, 105, 0.767);
+		border-color: rgba(110, 2, 38, 0.3);
+    }
+    
+.btn:disabled{
+    background-color: rgba(133, 42, 51, 0.795);
+    border-color: rgba(110, 2, 38, 0.301);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: rgb(246, 216, 224);
+    width: 35%;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid rgb(117, 5, 48);
+    border-radius: 15px;
+}
+
+.modal-body {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 35px; 
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+  /* Modal Footer */
+.modal-footer {
+    padding: 10px;
+    background-color: rgb(254,164, 174);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* The Close Button */
+.close1, .close2, .close3, .close4, .close5 {
+    color: rgb(117, 5, 48);
+    float: right;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1, .close2, .close3, .close4, .close5:hover,
+  .close1, .close2, .close3, .close4, .close5:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-footer .btn {
+    font-size: 15px;
+    width: 30%;
+}
+
+.modal-buttons {
+    text-align: center;
+}
+
+
+.modal-footer .btn:hover {
+    background-color: rgb(201, 94, 103);
+}
+
+.input2, .input3, .input5 {
+    padding: 15px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.errors{
+    font-size: 20px;
+    color: red;
+}
+
+.counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 40px;
+    margin: 0px 0px 0px 20px;
+    font-family: 'Pacifico', cursive;    
+}
+
