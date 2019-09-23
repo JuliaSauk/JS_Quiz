@@ -20,7 +20,7 @@ h1 {
 /* Questions buttons block*/
 .buttons-block {
     margin: 0 auto;
-    width: 1082px;
+    width: fit-content;
 }
 
 .button-block {
