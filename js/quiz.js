@@ -114,11 +114,11 @@ function Question_3() {
 
     okBtn.onclick = function () {
 
-      let answer3 = document.getElementById('answer3').value;
-      let correctAnswer = 'Chernihiv';
+      let answer3 = document.getElementById('answer3').value.toLowerCase();
+      let correctAnswer = 'nani';
 
       if (answer3.trim() === '') {
-        document.getElementById('errors3').innerHTML = 'You didn`t answer the question.';
+        document.getElementById('errors3').innerHTML = 'You did not answer the question.';
       } else {
         if (answer3 === correctAnswer) {
           document.getElementById('status3').innerHTML = '<h2 class="answer correct">Correct</h2>';
@@ -170,7 +170,7 @@ function Question_4() {
     };
 
     trueBtn.onclick = function () {
-      document.getElementById('status4').innerHTML = '<h2 class="answer incorrect">Incorrect</h2>';
+      document.getElementById('status4').innerHTML = '<h2 class="answer incorrect">Got ya! Incorrect</h2>';
       modal.style.display = 'none';
       document.getElementById('btn4').disabled = true;
     };
@@ -207,7 +207,7 @@ function Question_5() {
       let correctAnswer = 305;
 
       if (answer2.trim() === '') {
-        document.getElementById('errors5').innerHTML = 'You didn`t answer the question.';
+        document.getElementById('errors5').innerHTML = 'You did not answer the question.';
       } else if (isNaN(answer2)) {
         document.getElementById('errors5').innerHTML = 'Please enter the number.';
       } else {
